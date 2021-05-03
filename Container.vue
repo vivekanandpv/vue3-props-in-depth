@@ -24,7 +24,7 @@ export default {
       dataFirstName: "Raman",
       dataLastName: "Vasudev",
       dataIsActive: true,
-      dataYear: 2021,
+      dataYear: "2021", //  check the warning in console
     };
   },
 };

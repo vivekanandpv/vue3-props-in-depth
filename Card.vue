@@ -10,7 +10,12 @@
 
 <script>
 export default {
-  props: ["firstName", "lastName", "year", "isActive"],
+  props: {
+    firstName: String,
+    lastName: String,
+    isActive: Boolean,
+    year: Number,
+  },
 };
 </script>
 
