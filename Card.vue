@@ -12,7 +12,10 @@ export default {
     //    a prop now is an object
     firstName: {
       type: String,
-      default: "Default value for first name",
+      validator: function (value) {
+        return value && value.length >= 5;
+      },
+      default: "Default first name as value", //  doesn't activate!
     },
     lastName: {
       type: String,

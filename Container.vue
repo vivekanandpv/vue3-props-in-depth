@@ -2,8 +2,8 @@
   <div>
     <h3>Container Component</h3>
     <hr />
-    <!-- see the console for errors as firstName prop is not provided -->
-    <Card />
+    <!-- see the console for errors as firstName prop fails validation -->
+    <Card firstName="Ken" />
   </div>
 </template>
 
