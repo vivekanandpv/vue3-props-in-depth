@@ -8,6 +8,7 @@
       :lastName="dataLastName"
       :isActive="dataIsActive"
       :year="dataYear"
+      :cities="dataCities"
     />
   </div>
 </template>
@@ -24,7 +25,8 @@ export default {
       dataFirstName: "Raman",
       dataLastName: "Vasudev",
       dataIsActive: true,
-      dataYear: "2021", //  check the warning in console
+      dataYear: "2021", //  This is ok now as number or string is taken,
+      dataCities: ["Chennai", "Mysuru", "Haveri"],
     };
   },
 };
