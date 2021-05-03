@@ -2,14 +2,8 @@
   <div>
     <h3>Container Component</h3>
     <hr />
-    <!-- static props do not use v-bind or : shortcut -->
-    <Card
-      :firstName="dataFirstName"
-      :lastName="dataLastName"
-      :isActive="dataIsActive"
-      :year="dataYear"
-      :cities="dataCities"
-    />
+    <!-- see the console for errors as firstName prop is not provided -->
+    <Card :lastName="dataLastName" />
   </div>
 </template>
 
@@ -24,9 +18,6 @@ export default {
     return {
       dataFirstName: "Raman",
       dataLastName: "Vasudev",
-      dataIsActive: true,
-      dataYear: "2021", //  This is ok now as number or string is taken,
-      dataCities: ["Chennai", "Mysuru", "Haveri"],
     };
   },
 };
