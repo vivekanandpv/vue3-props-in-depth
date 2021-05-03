@@ -12,9 +12,14 @@ export default {
     //    a prop now is an object
     firstName: {
       type: String,
-      required: true,
+      default: "Default value for first name",
     },
-    lastName: String,
+    lastName: {
+      type: String,
+      default: function () {
+        return "Default last name from function";
+      },
+    },
   },
 };
 </script>
