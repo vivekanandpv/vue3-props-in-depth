@@ -2,7 +2,8 @@
   <div>
     <h3>Container Component</h3>
     <hr />
-    <Card />
+    <!-- static props do not use v-bind or : shortcut -->
+    <Card firstName="Raman" lastName="Vasudev" isActive="true" year="2021" />
   </div>
 </template>
 
